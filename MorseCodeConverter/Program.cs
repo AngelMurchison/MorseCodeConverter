@@ -31,10 +31,6 @@ namespace MorseCodeConverter
             var usersInput = new Dictionary<string, string>();
             string morse = string.Empty;
             bool wantToLearn = false;
-            foreach (var item in lettertoCode)
-            {
-                Console.WriteLine(item);
-            }
             //using (var sr = new StreamReader(filePath))
             //{
             //    while (sr.Peek() > 0)
@@ -52,7 +48,9 @@ namespace MorseCodeConverter
             //Console.WriteLine(morse);
 
             //}
-            Console.WriteLine($"Hello user, would you like to practice morse code?");
+            Console.WriteLine($"Hello user, would you like to practice morse code? Y for yes, N for no.");
+            string wantToType = Console.ReadLine().ToUpper();
+
             // Loop through all the characters in the string 'input'
             // for each character
             //   lookup that character in CodeToLetter
