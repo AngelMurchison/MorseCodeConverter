@@ -43,16 +43,25 @@ namespace MorseCodeConverter
             //        //dictionary.Add(temp1, temp2);
             //    }
 
+            //var character = "R";
+            //var morse = CodeToLetter[character];
+            //Console.WriteLine(morse);
+
             //}
             Console.ReadLine();
-            Console.WriteLine($"Hello user, would you like to practice morse code?\nPlease give me a single character A-Z or 0-9 and I'll give you that letter translated into morse code!");
+            Console.WriteLine($"Hello user, would you like to practice morse code?\nPlease give me a letter or sentence and I'll give you each letter translated into morse code!");
             var input = Console.ReadLine();
-            foreach (KeyValuePair<string, string> item in CodeToLetter)
+            input = input.ToUpper();
+
+            // Loop through all the characters in the string 'input'
+            // for each character
+            //   lookup that character in CodeToLetter
+            //   print whatever we find from that lookup
+            foreach (char item in input)
             {
-                if (CodeToLetter.ContainsKey(input))
-                {
-                    Console.WriteLine(item.Value);
-                }
+                var itemStr = item.ToString();
+                var morse = CodeToLetter[itemStr];
+                Console.WriteLine(morse);
             }
             Console.ReadLine();
         }
