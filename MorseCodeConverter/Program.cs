@@ -50,6 +50,8 @@ namespace MorseCodeConverter
             //}
             Console.WriteLine($"Hello user, would you like to practice morse code? Y for yes, N for no.");
             string wantToType = Console.ReadLine().ToUpper();
+            if (wantToType == "Y"){ wantToLearn = true; }
+            if (wantToType == "N") { wantToLearn = false; }
 
             // Loop through all the characters in the string 'input'
             // for each character
@@ -58,7 +60,6 @@ namespace MorseCodeConverter
             while (wantToLearn == true)
             {
                 Console.WriteLine("Please give me a letter or sentence and I'll give you each letter translated into morse code!");
-
             var input = Console.ReadLine().ToUpper();
                 foreach (char item in input)
                 {
@@ -74,8 +75,11 @@ namespace MorseCodeConverter
                         sw.WriteLine(item);
                     }
                 }
+                Console.WriteLine("Would you like to translate something else?");
+                wantToType = Console.ReadLine().ToUpper();
+                if (wantToType == "Y") { wantToLearn = true; }
+                if (wantToType == "N") { wantToLearn = false; }
             }
-            Console.ReadLine();
         }
     }
 }
