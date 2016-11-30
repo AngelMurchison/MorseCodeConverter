@@ -1,0 +1,6 @@
+c:\users\angel murchison\documents\visual studio 2015\Projects\MorseCodeConverter\MorseCodeConverter\bin\Debug\MorseCodeConverter.exe.config
+c:\users\angel murchison\documents\visual studio 2015\Projects\MorseCodeConverter\MorseCodeConverter\bin\Debug\MorseCodeConverter.exe
+c:\users\angel murchison\documents\visual studio 2015\Projects\MorseCodeConverter\MorseCodeConverter\bin\Debug\MorseCodeConverter.pdb
+c:\users\angel murchison\documents\visual studio 2015\Projects\MorseCodeConverter\MorseCodeConverter\obj\Debug\MorseCodeConverter.csprojResolveAssemblyReference.cache
+c:\users\angel murchison\documents\visual studio 2015\Projects\MorseCodeConverter\MorseCodeConverter\obj\Debug\MorseCodeConverter.exe
+c:\users\angel murchison\documents\visual studio 2015\Projects\MorseCodeConverter\MorseCodeConverter\obj\Debug\MorseCodeConverter.pdb
